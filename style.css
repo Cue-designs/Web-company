@@ -553,3 +553,37 @@ section.five a:hover{
     box-shadow: -2px -2px 8px var(--lightColor),
                 5px 4px 7px var(--darkColor);
 }
+
+section.six h3{
+    color: var(--darkColor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section.six article{
+    background: var(--gradient);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .5rem;
+    min-height: 16rem;
+}
+
+section.six article h4{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+section.six article p{
+    font-family: "poppins", 'Segoe UI' sans-serif;
+    font-size: .95rem;
+    margin-left: 1rem;
+    width: 75%;
+}
+
+
+section.six article span.no{
+     background: var(--darkColor);
+     padding: 1rem 1.5rem;
+     border-radius: 50%;
+     display: inline-block;
+     margin-top: 1rem;
+     transform: translate(14rem, 0rem);
+}
