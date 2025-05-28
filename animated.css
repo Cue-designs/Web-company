@@ -1,0 +1,58 @@
+section.two{
+    animation: scroll linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translate(0, 200px);
+        opacity: 0.7;
+    }
+
+    66%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100%{
+        transition: translate(0, 0);
+    }
+}
+
+figure.float img{
+    animation: img-bg linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes img-bg {
+    from{
+        transform: scale(.7);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.three{
+    animation: scroll-two linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes scroll-two{
+    0%{
+        transform: translate(0, 200px);
+    }
+
+    13%{
+        transform: translate(0, 100px);
+    }
+
+    66%{
+        transform: translate(0, 50px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
